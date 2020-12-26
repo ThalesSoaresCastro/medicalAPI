@@ -13,26 +13,26 @@ public class NameValidationTest {
     @Test
     public void NomeCorreto(){
         String correctName = "Marcelo Ferres";
-        assertEquals(nameValidation.validate(correctName) , 1);
+        assertEquals( 1, nameValidation.validate(correctName));
     }
 
     @Test
     public void umaLetra(){
         String name = "t";
-        assertEquals(nameValidation.validate(name), 0);
+        assertEquals( 0, nameValidation.validate(name));
     }
 
     @Test
     public void maxLetras(){
         /*String com no máximo 255 caracteres*/
         String name = "t".repeat(256);
-        assertEquals(nameValidation.validate(name), 0);
+        assertEquals( 0, nameValidation.validate(name));
     }
 
     @Test
     public void numeroNome(){
         String name = "R@afael T3xeira";
-        assertEquals(nameValidation.validate(name), 0);
+        assertEquals( 0, nameValidation.validate(name));
     }
 
 }
