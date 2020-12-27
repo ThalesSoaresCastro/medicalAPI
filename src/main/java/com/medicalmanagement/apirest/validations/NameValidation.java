@@ -8,7 +8,8 @@ public class NameValidation {
         //String regValidationName = "/^[a-záàâãéèêíïóôõöúçñ ]+$/i";
 
         //Regex verifica se existe apenas letras e espaços na string.
-        String regValidationName="^[ a-zA-Z á]*$";
+        //String regValidationName="^[ a-zA-Z á]*$";
+        String regValidationName="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÒÖÚÇÑ ]+$";
 
         Pattern p = Pattern.compile(regValidationName);
 
