@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  mysql-medicalAPI:
+    image: mysql:5.7
+    container_name: mysql-medicalAPI
+    environment:
+      MYSQL_ROOT_PASSWORD: "mysql"
+      MYSQL_DATABASE: "MedicalAPI"
+    ports:
+      - "4546:3306"
+    volumes:
+      - ./MySql:/var/lib/mysql
